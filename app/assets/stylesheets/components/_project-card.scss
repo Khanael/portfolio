@@ -1,0 +1,33 @@
+.title-link{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 16px;
+  row-gap: 16px;
+
+  .project-card {
+    border: 2px solid $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    padding: 16px;
+    max-width: 50%;
+
+    &:hover {
+      background-color: $dark-blue;
+      color: $light-white;
+      p, h3 {
+        color: $light-white;
+      }
+
+    }
+  }
+}

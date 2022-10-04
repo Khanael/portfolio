@@ -1,0 +1,71 @@
+<div class="banner">
+  <div class="container">
+    <div class="title">
+      <div>
+        <span>Hello !</span>
+        <h1>Bienvenue chez moi, je suis Alexis Barreirinho.</h1>
+        <span>Developpeur web fullstack</span>
+      </div>
+      <a href="#contact-form" class="button">Télchargez mon CV</a>
+    </div>
+    <div class="image">
+      <%= image_tag 'alexis_barreirinho.jpg' %>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="presentation">
+    <div>
+      <h2>Alexis Barreirinho</h2>
+      <p>Developpeur web fullstack</p>
+    </div>
+    <div class="presentation--right">
+      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="presentation--right--info">
+        <div>
+          <p class="highlight">Né à</p>
+          <p>Lyon</p>
+        </div>
+        <div>
+          <p class="highlight">Expérience</p>
+          <p>Junior</p>
+        </div>
+        <div>
+          <p class="highlight">Date de naissance</p>
+          <p>03 juillet 1992</p>
+        </div>
+      </div>
+      <%= link_to 'En savoir plus sur moi', about_path, class: 'link' %>
+    </div>
+  </div>
+  <div class="title-bg">
+    <i class="fa-solid fa-book-open"></i>
+    <h2>Portfolio</h2>
+  </div>
+  <div class="title-link">
+    <H3>Découvrez mes projets</H3>
+    <%= link_to 'Voir tous les projets', projects_path, class: 'link' %>
+  </div>
+  <div class="project-list">
+    <% @projects.each do |project| %>
+      <%= link_to project_path(project), class: 'project-card' do%>
+        <div class="dflex  dflex-center">
+          <div>
+            <div>
+              <h3>
+                <%= project.name %>
+              </h3>
+              <p>
+                <%= project.short_desc %>
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+// Import variable
+@import 'variables/color';
+@import 'variables/fonts';
+
+// Import components
+@import 'components/form';
+@import 'components/footer';
+@import 'components/animation';
+
+
+// Import pages
+@import 'pages/index';
+
+// Ext library
+@import "font-awesome";
+
+body{
+  min-height:100vh;
+  margin: 0;
+  padding: 0;
+  background-color: $light-white;
+  display:flex;
+  flex-direction:column;
+}
+
+.dflex {
+  display: flex;
+  column-gap: 16px;
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+  &-between {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.mw50 {
+  max-width: 50%;
+}
+
+.mt16 {
+  margin-top: 16px;
+}
+
+.py32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

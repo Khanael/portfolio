@@ -1,0 +1,18 @@
+footer{
+  margin-top:auto;
+  background-color: $dark-blue;
+  height: 80px;
+
+  p, i {
+    color: $light-white;
+    margin: 0;
+  }
+
+  i {
+    font-size: 24px;
+  }
+  .container{
+    margin:0 auto;
+  }
+
+}

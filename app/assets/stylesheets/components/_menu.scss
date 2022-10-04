@@ -1,0 +1,25 @@
+@import 'link';
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100vw;
+  background-color: #f2f1ef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .active {
+    color: $light-blue;
+  }
+}

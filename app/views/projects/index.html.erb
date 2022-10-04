@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="title">
+    <h1>Mes projets</h1>
+  </div>
+  <div class="project-list">
+    <% @projects.each do |project| %>
+      <%= link_to project_path(project), class: 'project-card' do%>
+        <div class="dflex  dflex-center">
+          <div>
+            <div>
+              <h3>
+                <%= project.name %>
+              </h3>
+              <p>
+                <%= project.short_desc %>
+              </p>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <div class="dflex dflex-center mt16">
+    <div>
+      <div class="loadingio-spinner-double-ring-pzvowntt0u"><div class="ldio-38ggzsd6qyz">
+        <div></div>
+        <div></div>
+        <div><div></div></div>
+        <div><div></div></div>
+        </div>
+      </div>
+    </div>
+    <p>Et d'autres projets que je développe en ce moment même !</p>
+  </div>
+</div>

@@ -1,0 +1,62 @@
+@import '../components/button';
+@import '../components/project-card';
+
+
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-color: #dddddd;
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    column-gap: 16px;
+    height: 100%;
+    margin: 0 auto;
+  }
+
+  .image {
+
+    img{
+      border-radius: 50%;
+    }
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 16px;
+    align-items: flex-start;
+
+    span {
+      font-size: $h1--size;
+    }
+  }
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 16px;
+  margin-bottom: 64px;
+
+  &--right{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+
+    a{
+      padding-top: 16px;
+      align-self: flex-end;
+    }
+
+    &--info{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

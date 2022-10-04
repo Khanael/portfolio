@@ -1,0 +1,51 @@
+// import google font
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500;700&display=swap');
+
+$h1--size: 56px;
+$h2--size: 48px;
+$h3--size: 28px;
+$p--size: 18px;
+
+
+// Fonts config
+body {
+  font-size: $p--size;
+  color: $dark-blue;
+  font-weight: 500;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1 {
+  font-size: $h1--size;
+  color: $dark-blue;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: $h2--size;
+  color: $dark-blue;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 700;
+}
+
+
+h3 {
+  font-size: $h3--size;
+  color: $dark-blue;
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: $p--size;
+  color: $dark-blue;
+  font-weight: 500;
+  font-family: 'Bai Jamjuree', sans-serif;
+  padding: 0;
+  margin: 8px 0;
+}
+
+.highlight{
+  color: $light-blue;
+}
