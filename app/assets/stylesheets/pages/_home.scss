@@ -31,8 +31,13 @@
     row-gap: 16px;
     align-items: flex-start;
 
+    h1 {
+      margin: 0;
+    }
+
     span {
-      font-size: $h1--size;
+      font-size: $h2--size;
+      color: $light-blue;
     }
   }
 }
