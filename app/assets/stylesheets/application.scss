@@ -26,6 +26,7 @@ body{
 .dflex {
   display: flex;
   column-gap: 16px;
+  row-gap: 16px;
 
   &-center {
     justify-content: center;
@@ -35,6 +36,13 @@ body{
     justify-content: space-between;
     align-items: center;
   }
+  &-end{
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &-column{
+    flex-direction: column;
+  }
 }
 
 .mw50 {
@@ -43,6 +51,10 @@ body{
 
 .mt16 {
   margin-top: 16px;
+}
+
+.mb64 {
+  margin-bottom: 64px;
 }
 
 .py32 {

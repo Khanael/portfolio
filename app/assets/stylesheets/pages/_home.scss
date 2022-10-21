@@ -10,7 +10,7 @@
 
   .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
     column-gap: 16px;
@@ -47,7 +47,6 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 16px;
-  margin-bottom: 64px;
 
   &--right{
     display: flex;

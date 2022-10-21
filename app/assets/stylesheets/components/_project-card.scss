@@ -6,7 +6,7 @@
 
 .project-list{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   column-gap: 16px;
@@ -17,9 +17,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 16px;
     padding: 16px;
-    max-width: 50%;
+    width: 45%;
 
     &:hover {
       background-color: $dark-blue;

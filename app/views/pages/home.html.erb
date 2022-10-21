@@ -2,10 +2,10 @@
   <div class="container">
     <div class="title">
       <div>
-        <h1>Hello, je suis Alexis Barreirinho</h1>
+        <h1>Hello, <br>Moi c'est Alexis</h1>
         <span>Developpeur web fullstack</span>
       </div>
-      <a href="#contact-form" class="button">Télchargez mon CV</a>
+      <a href="#contact-form" class="button">Télécharger mon CV</a>
     </div>
     <div class="image">
       <%= image_tag 'alexis_barreirinho.jpg' %>
@@ -13,30 +13,32 @@
   </div>
 </div>
 <div class="container">
-  <div class="presentation">
-    <div>
-      <h2>Alexis Barreirinho</h2>
-      <p>Developpeur web fullstack</p>
-    </div>
-    <div class="presentation--right">
-      <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <div class="presentation--right--info">
-        <div>
-          <p class="highlight">Né à</p>
-          <p>Lyon</p>
-        </div>
-        <div>
-          <p class="highlight">Expérience</p>
-          <p>Junior</p>
-        </div>
-        <div>
-          <p class="highlight">Date de naissance</p>
-          <p>03 juillet 1992</p>
+  <div class="dflex dflex-column dflex-end mb64">
+    <div class="presentation">
+      <div>
+        <h2>Alexis Barreirinho</h2>
+        <p>Developpeur web fullstack</p>
+      </div>
+      <div class="presentation--right">
+        <h3>Pour en savoir un peu plus sur moi (d'où je viens)</h3>
+        <p>De formation web marketing, je me suis formé au Wagon Lyon pour devenir développeur web. Aujourd'hui à la recherche d'une première opportunité.</p>
+        <div class="presentation--right--info">
+          <div>
+            <p class="highlight">Basé à</p>
+            <p>Lyon</p>
+          </div>
+          <div>
+            <p class="highlight">Expérience</p>
+            <p>Junior</p>
+          </div>
+          <div>
+            <p class="highlight">Date de naissance</p>
+            <p>03 juillet 1992</p>
+          </div>
         </div>
       </div>
-      <%= link_to 'En savoir plus sur moi', about_path, class: 'link' %>
     </div>
+    <%= link_to 'En savoir plus sur moi', about_path, class: 'link' %>
   </div>
   <div class="title-bg">
     <i class="fa-solid fa-book-open"></i>
@@ -49,7 +51,7 @@
   <div class="project-list">
     <% @projects.each do |project| %>
       <%= link_to project_path(project), class: 'project-card' do%>
-        <div class="dflex  dflex-center">
+        <div class="dflex dflex-center">
           <div>
             <div>
               <h3>
